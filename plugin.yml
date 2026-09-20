@@ -1,0 +1,22 @@
+name: BDCustomBackPacks
+main: BDCustomBackPacks\BobyDev\Main
+version: 1.0.0
+api: 5.0.0
+authors:
+  - BobyD3V
+description: Custom wearable and placeable backpacks with persistent 27/54-slot storage and a command-free double-sneak shortcut.
+depend:
+  - Customies
+  - FormAPI
+commands:
+  backpack:
+    description: Open your equipped backpack or give a backpack
+    usage: "/backpack [open|give <variant>]"
+    permission: bdcustombackpacks.command
+permissions:
+  bdcustombackpacks.command:
+    description: Allows use of the backpack command
+    default: true
+  bdcustombackpacks.admin:
+    description: Allows giving any backpack variant
+    default: op
